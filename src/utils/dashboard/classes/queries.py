@@ -2,7 +2,7 @@ import pandas as pd
 import calendar
 
 class Queries:
-    df=pd.read_csv('../data/crypto_csv_formatted.csv', sep=',')
+    df=pd.read_csv('data/crypto_csv_formatted.csv', sep=',')
     df['month_name'] = df['month'].apply(lambda x: calendar.month_abbr[x])
     df['date'] = pd.to_datetime(df['date'])
 
