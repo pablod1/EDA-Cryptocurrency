@@ -32,6 +32,15 @@ class Tables:
         res.update_layout(height=140, margin=dict(r=5, l=5, t=5, b=5))
 
         return res
+
+    
+    def get_circulatingSupply_by_years(self, df):
+        res = go.Figure(data=[go.Table(header=dict(values=['circulating supply', 'date']),
+                    cells=dict(values=[df['circulating_supply'], df['date']]))
+                ])
+        res.update_layout(height=140, margin=dict(r=5, l=5, t=5, b=5))
+
+        return res
     
 
     def get_crypto_price(self, df):

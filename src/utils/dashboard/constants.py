@@ -6,5 +6,6 @@ graph_description = {
     'text5': 'Top cryptocurrencies by marketcap for the selected year.',
     'text6': 'Count of currencies by the years.',
     'text7': 'Months marketcap by the selected year.',
-    'text8': 'Months marketcap by the years.'
+    'text8': 'Months marketcap by the years.',
+    'text9': 'Evolution of the circulating supply by the years'
 }

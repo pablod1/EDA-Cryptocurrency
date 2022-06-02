@@ -92,9 +92,17 @@ def BTC():
             st.plotly_chart(fig)
             st.markdown(cns.graph_description.get('text3'))
 
-
+    # Figure 4
     with col2:
-        st.info('TO BE decided')
+
+        df = query.get_circulatingSupply_by_years()
+        fig = graph.get_circulatingSupply_by_years(df)
+        st.plotly_chart(fig)
+
+        with st.expander('Detail fig 4'):
+            fig = table.get_circulatingSupply_by_years(df)
+            st.plotly_chart(fig)
+            st.markdown(cns.graph_description.get('text9'))
 
 
 def market():

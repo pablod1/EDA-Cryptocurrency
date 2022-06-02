@@ -43,6 +43,12 @@ class Queries:
         return res
 
 
+    def get_circulatingSupply_by_years(self):
+        res = self.df.loc[self.df['name'] == 'Bitcoin', ['circulating_supply','date']]
+
+        return res
+
+
     def get_crypto_price(self, name):
         res = self.df.loc[self.df['name'] == name]
 

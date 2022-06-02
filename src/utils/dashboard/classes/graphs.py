@@ -74,6 +74,27 @@ class Graphs:
         return res
 
 
+    def get_circulatingSupply_by_years(self, df):
+        trace = go.Bar(
+            x = df['date'],
+            y = df['circulating_supply'],
+            marker = dict(color = 'green'),
+            text = df['circulating_supply']
+        )
+
+        layout = dict(
+            title = '2. Circulating supply by all years',
+            font=dict(
+                family="Courier New, monospace",
+                size=18,
+                color="RebeccaPurple"
+        ))
+
+        res = go.Figure(data = trace, layout = layout)
+
+        return res
+
+
     def get_crypto_price(self, df, name):
         trace = go.Scatter(
             x = df['date'],
