@@ -5,7 +5,7 @@ import classes.queries as gq
 import classes.graphs as g
 import classes.tables as tb
 
-df=pd.read_csv('../../data/crypto_csv_formatted.csv', sep=',')
+df=pd.read_csv('../../../data/crypto_csv_formatted.csv', sep=',')
 
 query = gq.Queries()
 graph = g.Graphs()
