@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 
 class fcs:
 
+    # Function to scroll down and click Load more btn
     def run_scroll(d):
 
         cant_iter = m.ceil(c.cant_iter)-1
@@ -33,6 +34,7 @@ class fcs:
             else:
                 break
 
+    # Once everythins is loaded we get the full data
     def get_crypto_list(driver, soup, cont, i):
         print(i)
         items = soup.find_all('tr', {'class', 'cmc-table-row'})
@@ -69,6 +71,7 @@ class fcs:
 
         return cryptos_data
 
+    # We open the csv to write the header
     def start_csv():
         f = open('../../../../csv_file.csv_test', 'w', newline='')
         header = ['name','symbol','rank','price','mcap','circulating_supply','date']
@@ -76,8 +79,8 @@ class fcs:
         writer.writerow(header)
         f.close()
 
+    # Open again to write the collected data
     def write_csv(cryptos_data):
-        # Escribimos la lista en el csv
         with open('../../../../csv_file.csv_test','a', newline='', encoding='UTF-8') as f:
             writer = csv.writer(f)
 

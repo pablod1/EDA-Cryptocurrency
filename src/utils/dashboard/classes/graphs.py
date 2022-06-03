@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-
+# Graphs class
 class Graphs:
 
     def __init__(self):

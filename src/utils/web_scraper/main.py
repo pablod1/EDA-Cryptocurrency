@@ -23,7 +23,7 @@ for i in range(13,23):
 
     for j in range(1,13):
         
-        # controlamos final de los datos
+        # control end of data
         if i == 22 and j > 5:
             break
         try:

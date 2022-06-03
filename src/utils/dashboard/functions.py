@@ -5,12 +5,15 @@ import classes.queries as gq
 import classes.graphs as g
 import classes.tables as tb
 
+# Reading the csv
 df=pd.read_csv('src/data/crypto_csv_formatted.csv', sep=',')
 
 query = gq.Queries()
 graph = g.Graphs()
 table = tb.Tables()
 
+
+# Home function main page
 def home():
     st.title('EDA Cryptocurrency')
 
@@ -24,6 +27,7 @@ def home():
     
     csv = convert_df(df)
 
+    #Download csv file
     st.download_button(
         label='Download CSV file',
         data=csv,
@@ -40,7 +44,7 @@ def home():
     """)
         
         
-
+# Bitcoin section
 def BTC():
     # Sliders
     st.sidebar.markdown('##### Figure 2')
@@ -105,6 +109,7 @@ def BTC():
             st.markdown(cns.graph_description.get('text9'))
 
 
+# Global market section
 def market():
     # Sliders
     st.sidebar.markdown('##### Figure 1')

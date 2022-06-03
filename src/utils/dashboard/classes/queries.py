@@ -1,6 +1,7 @@
 import pandas as pd
 import calendar
 
+# Queries class
 class Queries:
     df=pd.read_csv('src/data/crypto_csv_formatted.csv', sep=',')
     df['month_name'] = df['month'].apply(lambda x: calendar.month_abbr[x])
