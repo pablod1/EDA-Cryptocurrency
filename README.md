@@ -1,8 +1,17 @@
 # EDA Cryptocurrency
-### Project for the Data science bootcamp in The Bridge.
 
-The main idea is to make an analysis for the cryptocurrency market that serve people that are interested to invest in the market.
+### Description
+The purpose of the project is to perform an exlporatory Data Analysis of the cryptocurrency market.
 
-Data was collected from https://coinmarketcap.com/es/historical/ by web scraping. 
-Formatted with pandas and visualized with Plotly.
-The dashboard is developed in the streamlit platform.
+### Languages
+*The entire project is coded in Python
+
+### Data
+*Data was collected from https://coinmarketcap.com/es/historical/. 
+*I used Selenium and BeautifulSoup python libraries for web scraping
+*Formatted the data with Pandas
+*Plotly for visualizing graphs
+
+### Dashboard
+*The main utility of the project is an interactive dashboard made on Streamlit
+*Link: *Link: https://share.streamlit.io/pablod1/eda-cryptocurrency/main/src/utils/dashboard/main.py
