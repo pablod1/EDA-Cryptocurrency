@@ -1,4 +1,4 @@
-(https://www.criptonoticias.com/wp-content/uploads/2022/04/precio-bitcoin-primera-semana-verde-1140x570.jpg)
+![crypto](https://www.criptonoticias.com/wp-content/uploads/2022/04/precio-bitcoin-primera-semana-verde-1140x570.jpg)
 The purpose of the project is to perform an exlporatory Data Analysis of the cryptocurrency market with the help of an interactive dashboard.
 
 # Languages
