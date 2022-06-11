@@ -4,7 +4,7 @@ import math as m
 import csv
 from selenium.webdriver.common.by import By
 
-class fcs:
+class Functions:
 
     # Function to scroll down and click Load more btn
     def run_scroll(d):
@@ -67,13 +67,13 @@ class fcs:
                 cont += 1
         except AttributeError:
             print("He entrado al except de get_crypto()")
-            fcs.run_scroll(driver)
+            Functions.run_scroll(driver)
 
         return cryptos_data
 
     # We open the csv to write the header
     def start_csv():
-        f = open('../../../../csv_file.csv_test', 'w', newline='')
+        f = open('../../../csv_file.csv_test', 'w', newline='')
         header = ['name','symbol','rank','price','mcap','circulating_supply','date']
         writer = csv.writer(f)
         writer.writerow(header)
@@ -81,7 +81,7 @@ class fcs:
 
     # Open again to write the collected data
     def write_csv(cryptos_data):
-        with open('../../../../csv_file.csv_test','a', newline='', encoding='UTF-8') as f:
+        with open('../../../csv_file.csv_test','a', newline='', encoding='UTF-8') as f:
             writer = csv.writer(f)
 
             for i in cryptos_data.keys():

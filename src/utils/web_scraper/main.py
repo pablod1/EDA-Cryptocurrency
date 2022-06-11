@@ -1,4 +1,4 @@
-from classes.fcs import fcs
+from functions import Functions as fcs
 import constants as c
 
 from selenium.webdriver.chrome.service import Service
